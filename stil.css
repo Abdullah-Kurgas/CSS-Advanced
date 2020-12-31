@@ -15,6 +15,6 @@ a[target="_blank"]{
     color: yellow;
     
 }
-p[target="Par"]:hover {
+p[type="hover"]:hover {
     font-style: italic;
 }
