@@ -1,0 +1,70 @@
+body {
+    background-color: #050210;
+}
+#krug {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: 100px 500px;
+    border-radius: 50%;
+    background-color: #050210;
+
+}
+#boje {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    margin: 75px 475px;
+    border-radius: 50%;
+    background: linear-gradient( #fb5dad 0%, #55fb9f 50%, #b97aff 100%);
+    animation-name: my-animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+#krug::after {
+    content: " ";
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    animation-name: background-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: blur(3px);
+}
+#boje-2 {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    margin: 75px 475px;
+    border-radius: 50%;
+    background: linear-gradient( #fb5dad 0%, #55fb9f 50%, #b97aff 100%);
+    animation-name: my-animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    filter: blur(50px);
+}
+
+@keyframes my-animation {
+    from{
+        transform: translateX(0px) rotate(0deg);
+    }
+    to{
+        transform: translateX(0px) rotate(360deg);
+    }
+}
+
+@keyframes background-animation {
+    from{
+        background-color:  rgba(57, 61, 65, 0.37);
+        transform: scale(0, 0);
+    }
+    to{
+        background-color:  rgba(57, 61, 65, 0.37);
+        transform: scale(300px, 300px);
+    }
+}
+ 
